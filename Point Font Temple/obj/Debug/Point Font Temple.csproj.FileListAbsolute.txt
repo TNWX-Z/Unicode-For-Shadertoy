@@ -1,0 +1,14 @@
+F:\Vs iTems\Point Font Temple\Point Font Temple\bin\Debug\Point Font Temple.exe.config
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\Point Font Temple.csprojResolveAssemblyReference.cache
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\MainWindow.g.cs
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\App.g.cs
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\Point Font Temple_MarkupCompile.cache
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\Point Font Temple_MarkupCompile.lref
+F:\Vs iTems\Point Font Temple\Point Font Temple\bin\Debug\Point Font Temple.exe
+F:\Vs iTems\Point Font Temple\Point Font Temple\bin\Debug\Point Font Temple.pdb
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\MainWindow.baml
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\Point Font Temple.g.resources
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\Point_Font_Temple.Properties.Resources.resources
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\Point Font Temple.csproj.GenerateResource.Cache
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\Point Font Temple.exe
+F:\Vs iTems\Point Font Temple\Point Font Temple\obj\Debug\Point Font Temple.pdb

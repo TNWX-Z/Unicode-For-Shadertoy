@@ -1,0 +1,128 @@
+﻿<Window x:Class="Point_Font_Temple.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Point_Font_Temple"
+        mc:Ignorable="d"
+        xmlns:winform="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        Title="Power Point Font(Free version) made by 恬纳微晰   QQ:8341444373" Height="800" Width="1200" ResizeMode="NoResize" WindowStyle="ThreeDBorderWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="570"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="182"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
+            <Button x:Name="ZH_btn" Content="转换(Convert)" FontSize="18" FontWeight="Bold"
+                    Width="150" Height="30" Margin="2,7,2,2"
+                    Click="ZH_btn_Click"/>
+
+            <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" Margin="0,8,0,0" Height="253">
+                <TextBlock Text="输入汉字(Input):" FontSize="16 " HorizontalAlignment="Left" Margin="5,6,5,8" Width="138" FontWeight="Bold"/>
+                <TextBox x:Name="input_txtbox" Text="恬纳微晰" HorizontalAlignment="Center" Width="140" MaxLength="72" TextWrapping="Wrap" FontSize="16" Margin="0,1,0,0" Height="202">
+                    <TextBox.Effect>
+                        <DropShadowEffect Opacity="0.7" ShadowDepth="8.5" RenderingBias="Quality" BlurRadius="8" Color="#FF84A628"/>
+                    </TextBox.Effect>
+                </TextBox>
+            </StackPanel>
+            <!--
+            https://www.shadertoy.com/user/834144373
+            -->
+            <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Vertical" Margin="0,2,0,0" Height="266">
+                <TextBlock Text="联系(Cantact):" FontSize="16" Margin="5,0,0,5" FontWeight="Bold"/>
+                <Border SnapsToDevicePixels="True" CornerRadius="5"
+                        BorderBrush="#d24726" BorderThickness="3" Margin="2,2,2,0">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#d24726" BlurRadius="30" ShadowDepth="2" Opacity="1" />
+                    </Border.Effect>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20" HorizontalAlignment="Left" Source="icon\QQ_icon.png" Stretch="Uniform" />
+                        <TextBlock Text=": 834144373"  Margin="5,0,0,0" FontSize="15" FontWeight="Bold"/>
+                    </StackPanel>
+                </Border>
+                <Border SnapsToDevicePixels="True" CornerRadius="5"
+                        BorderBrush="#FF5CA801" BorderThickness="3" Margin="2,2,2,0">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#FF16CB03" BlurRadius="30" ShadowDepth="2" Opacity="1" />
+                    </Border.Effect>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20" HorizontalAlignment="Left" Source="icon\User_Weixin_icon.png" Stretch="Uniform" />
+                        <TextBlock Text=": TNWX-Z"  Margin="5,0,0,0" FontSize="15" FontWeight="Bold"/>
+                    </StackPanel>
+                </Border>
+                <Border SnapsToDevicePixels="True" CornerRadius="5"
+                        BorderBrush="#FF1B4193" BorderThickness="3" Margin="2,6,2,0">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#FF0344B4" BlurRadius="30" ShadowDepth="2" Opacity="1" />
+                    </Border.Effect>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20" HorizontalAlignment="Left" Source="icon\FaceBook_icon.png" Stretch="Uniform" />
+                        <TextBlock Text=": " Margin="5,0,0,0" FontSize="15" FontWeight="Bold">
+                            <Hyperlink x:Name="User_Facebook_link" Click="User_Facebook_link_Click" NavigateUri="https://www.facebook.com/834144373TNWX" TextDecorations="{x:Null}" Foreground="#FF0B3287">Yuanhong Zhu</Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+                <Border SnapsToDevicePixels="True" CornerRadius="5"
+                        BorderBrush="#FF2DA0CB" BorderThickness="3" Margin="2,6,2,0">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#FF1A7BBD" BlurRadius="20" ShadowDepth="2" Opacity="1" />
+                    </Border.Effect>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20" HorizontalAlignment="Left" Source="icon\Twitter_icon.png" Stretch="Uniform" />
+                        <TextBlock Text=": " Margin="5,0,0,0" FontSize="15" FontWeight="Bold">
+                            <Hyperlink x:Name="User_Twitter_link" Click="User_Twitter_link_Click" NavigateUri="https://twitter.com/834144373zhu" TextDecorations="{x:Null}" Foreground="#FF0E6C8F">@834144373zhu</Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+                <Border SnapsToDevicePixels="True" CornerRadius="5"
+                        BorderBrush="#FF00B291" BorderThickness="3" Margin="2,6,2,0">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#FF01A891" BlurRadius="20" ShadowDepth="2" Opacity="1" />
+                    </Border.Effect>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20" HorizontalAlignment="Left" Source="icon\ShaderToy_icon.png" Stretch="Uniform" />
+                        <TextBlock Text=": " Margin="5,0,0,0" FontSize="15" FontWeight="Bold">
+                            <Hyperlink x:Name="User_Shadertoy_link" Click="User_Shadertoy_link_Click" NavigateUri="https://www.shadertoy.com/user/834144373" TextDecorations="{x:Null}" Foreground="#FF09806A">834144373</Hyperlink>
+                        </TextBlock>
+
+                    </StackPanel>
+                </Border>
+                <Border SnapsToDevicePixels="True" CornerRadius="10" Height="28"
+                        BorderBrush="#FFCB3838" BorderThickness="3" Margin="2,6,2,0">
+                    <Border.Effect>
+                        <DropShadowEffect Color="#FFB61329" BlurRadius="20" ShadowDepth="2" Opacity="1" />
+                    </Border.Effect>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20" HorizontalAlignment="Left" Source="icon\CSDN_icon.png" Stretch="Uniform" />
+                        <TextBlock Text=":   " Margin="5,0,0,0" FontSize="15" FontWeight="Bold">
+                            <Hyperlink x:Name="User_CSDN_link" Click="User_CSDN_link_Click" NavigateUri="http://blog.csdn.net/baidu_26153715/article/" TextDecorations="{x:Null}" Foreground="#FF971515">恬纳微晰</Hyperlink>
+                        </TextBlock>
+                    </StackPanel>
+                </Border>
+                <TextBlock FontSize="14" FontWeight="Bold" Margin="1,5,80,0" Text="How To Do:"></TextBlock>
+                <TextBlock Margin="2,4,0,0" FontSize="13" FontWeight="Bold">
+                    <Hyperlink x:Name="User_PowLanguage_link" Click="User_PowLanguage_link_Click" NavigateUri="https://www.shadertoy.com/view/XsGXzt"  Foreground="#FF519EFB">Shadertoy Pow Language</Hyperlink>
+                </TextBlock>
+            </StackPanel>
+        </StackPanel>
+        <!-- 
+            插入的winForm 组件
+        -->
+        <WindowsFormsHost Grid.Row="0" Grid.Column="1" Margin="0,0,0,5">
+            <winform:PictureBox x:Name="winform_picture_box"/>
+        </WindowsFormsHost>
+
+        <TextBox x:Name="out_result_block" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Margin="5,0,5,10" Text="请等待结果(Waiting)......" TextWrapping="WrapWithOverflow" Background="{x:Null}" SelectionBrush="#FF5DBDF3" BorderBrush="#FF050506" FontSize="15" FontWeight="Medium">
+            <TextBox.Effect>
+                <DropShadowEffect Opacity="0.6" ShadowDepth="6" Color="#FF8AC7DE" RenderingBias="Quality" BlurRadius="6"/>
+            </TextBox.Effect>
+        </TextBox>
+
+
+    </Grid>
+
+</Window>
